@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{D0B7E2AC-FE87-4EDD-8E3E-BC1F2EC9F94B}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/crint/Documents/GitHub/welltrak/welltrack/welltrak/Services/WelltrakAppService.cs" relfile="welltrak/Services/WelltrakAppService.cs" line="10" column="1" />
+      <Breakpoint file="/Users/crint/Documents/GitHub/welltrak/welltrack/iOS/Framework/LoadingOverlay.cs" relfile="iOS/Framework/LoadingOverlay.cs" line="8" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.welltrak.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.56AF7F2C-A071-425E-9A95-483606A1B485" automaticSigning="False" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.welltrak.Droid AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

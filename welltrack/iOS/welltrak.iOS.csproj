@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{D0B7E2AC-FE87-4EDD-8E3E-BC1F2EC9F94B}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>welltrak.iOS</RootNamespace>
+    <AssemblyName>welltrack.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>59533</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchSdkVersion>12.1</MtouchSdkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Clint Smith (8UZ7F2Q8ES)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <CodesignProvision>wellltrackDevProvisioningProfile</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="HockeySDK">
+      <HintPath>..\packages\HockeySDK.Xamarin.5.1.2\lib\Xamarin.iOS10\HockeySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK.iOSBindings">
+      <HintPath>..\packages\HockeySDK.Xamarin.5.1.2\lib\Xamarin.iOS10\HockeySDK.iOSBindings.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\welltrak\welltrak.csproj">
+      <Project>{2afa13f3-6cf3-4b47-8e7a-836f1eaa05f9}</Project>
+      <Name>welltrak</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="Certs\AdHoc\wellltrackDevProvisioningProfile.mobileprovision" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Areas\Welcome\WelcomeViewController.cs" />
+    <Compile Include="Areas\Welcome\WelcomeViewController.designer.cs">
+      <DependentUpon>WelcomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Register\RegisterViewController.cs" />
+    <Compile Include="Areas\Register\RegisterViewController.designer.cs">
+      <DependentUpon>RegisterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Timesheet\MapViewController.cs" />
+    <Compile Include="Areas\Timesheet\MapViewController.designer.cs">
+      <DependentUpon>MapViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\MapHelper.cs" />
+    <Compile Include="Areas\Task\TaskTableViewController.cs" />
+    <Compile Include="Areas\Task\TaskTableViewController.designer.cs">
+      <DependentUpon>TaskTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\DemoSettings\DemoSettingsViewController.cs" />
+    <Compile Include="Areas\DemoSettings\DemoSettingsViewController.designer.cs">
+      <DependentUpon>DemoSettingsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Disclaimer\DisclaimerController.cs" />
+    <Compile Include="Areas\Disclaimer\DisclaimerController.designer.cs">
+      <DependentUpon>DisclaimerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Framework\OrientationUtility.cs" />
+    <Compile Include="Framework\WelltrakAlertViewController.cs" />
+    <Compile Include="Framework\LoadingOverlay.cs" />
+    <Compile Include="Framework\Reachability.cs" />
+    <Compile Include="Framework\IconHelper.cs" />
+    <Compile Include="Framework\KeyChainHelper.cs" />
+    <Compile Include="Framework\ResponsiveTextView.cs" />
+    <Compile Include="Framework\ResponsiveTextView.designer.cs" />
+    <Compile Include="Areas\Schedule\ScheduleListViewController.cs" />
+    <Compile Include="Areas\Schedule\ScheduleListViewController.designer.cs">
+      <DependentUpon>ScheduleListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Schedule\ScheduleTableSource.cs" />
+    <Compile Include="Areas\Appointment\AppointmentPageViewController.cs" />
+    <Compile Include="Areas\Appointment\AppointmentPageViewController.designer.cs">
+      <DependentUpon>AppointmentPageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Appointment\AppointmentViewController.cs" />
+    <Compile Include="Areas\Appointment\AppointmentViewController.designer.cs">
+      <DependentUpon>AppointmentViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Task\TaskTableSource.cs" />
+    <Compile Include="Areas\Task\TaskCell.cs" />
+    <Compile Include="Areas\Task\TaskCell.designer.cs">
+      <DependentUpon>TaskCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Assessment\AssessmentTableViewController.cs" />
+    <Compile Include="Areas\Assessment\AssessmentTableViewController.designer.cs">
+      <DependentUpon>AssessmentTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Assessment\BooleanCell.cs" />
+    <Compile Include="Areas\Assessment\BooleanCell.designer.cs">
+      <DependentUpon>BooleanCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Assessment\AssessmentTableSource.cs" />
+    <Compile Include="Areas\Assessment\FiveStarCell.cs" />
+    <Compile Include="Areas\Assessment\FiveStarCell.designer.cs">
+      <DependentUpon>FiveStarCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Assessment\DecimalCell.cs" />
+    <Compile Include="Areas\Assessment\DecimalCell.designer.cs">
+      <DependentUpon>DecimalCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\AppointmentSummary\AppointmentSummaryTableViewController.cs" />
+    <Compile Include="Areas\AppointmentSummary\AppointmentSummaryTableViewController.designer.cs">
+      <DependentUpon>AppointmentSummaryTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\AppointmentSummary\AppointmentSummaryTableSource.cs" />
+    <Compile Include="Areas\AppointmentSummary\AppointmentDetailCell.cs" />
+    <Compile Include="Areas\AppointmentSummary\AppointmentDetailCell.designer.cs">
+      <DependentUpon>AppointmentDetailCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\AppointmentSummary\AssessmentItemSummaryCell.cs" />
+    <Compile Include="Areas\AppointmentSummary\AssessmentItemSummaryCell.designer.cs">
+      <DependentUpon>AssessmentItemSummaryCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\AppointmentSummary\TaskSummaryCell.cs" />
+    <Compile Include="Areas\AppointmentSummary\TaskSummaryCell.designer.cs">
+      <DependentUpon>TaskSummaryCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\AppointmentSummary\FinalizeCell.cs" />
+    <Compile Include="Areas\AppointmentSummary\FinalizeCell.designer.cs">
+      <DependentUpon>FinalizeCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\AppointmentSummary\HeaderCell.cs" />
+    <Compile Include="Areas\AppointmentSummary\HeaderCell.designer.cs">
+      <DependentUpon>HeaderCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Assessment\TernaryCell.cs" />
+    <Compile Include="Areas\Assessment\TernaryCell.designer.cs">
+      <DependentUpon>TernaryCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Appointment\AppointmentPageViewControllerDataSource.cs" />
+    <Compile Include="Areas\Appointment\AppointmentOperationsViewController.cs" />
+    <Compile Include="Areas\Appointment\AppointmentOperationsViewController.designer.cs">
+      <DependentUpon>AppointmentOperationsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPageController.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Areas\Appointment\AppointmentCell.cs" />
+    <Compile Include="Areas\Appointment\AppointmentCell.designer.cs">
+      <DependentUpon>AppointmentCell.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FontAwesome.ttf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">welltrak.Droid</string>
+  <!--
+  <string name="Login_txt">Login</string>
+  <string name="Create_Acct_txt">Create An Account</string>
+  <string name="Welcome_Text">Please login with your HockeyApp account's email address and password to authorize access to this app or create an account below</string>
+  -->
+</resources>
