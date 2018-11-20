@@ -133,10 +133,10 @@ namespace welltrak.iOS
             }
 
             label1.Text = $"Dist_m: {distanceToTarget.ToString("N0")} Close: {closeEnough.ToString()}";
-            if (closeEnough)
-            {
+            //if (closeEnough)
+            //{
                 EnableLoginButton();
-            }
+            //}
         }
 
         private void EnableLoginButton()

@@ -29,8 +29,6 @@ namespace welltrak.iOS
                 lblDateTime.Text = appointment.Time.ToString("MM/dd/yyyy HH:mm", CultureInfo.InvariantCulture);
 
 			}
-
-              
         }
     }
 }
